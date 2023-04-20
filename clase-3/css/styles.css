@@ -127,33 +127,40 @@ header img{
 /*-------SECCION PRODUCTOS---------*/
 
 #productos{
-    display: flex;
+    margin-top: 20px;
+   
 }
+.titulo-producto{
+    align-items: center;
+    justify-content: center;
+    grid-column:1/3;
+    grid-row: 1/2;
+    margin-top: 20px;
+    
+}
+
 .padre-card {
-    display: flex;
-    gap: 5px;
+    display: grid;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 50px 100px;
 }
 
-.card{
-    background-color: orange;
-    margin: 50px 40px 50px 40px;
-    /*dos valores*/
-    margin: 50px 20 px;
-    padding: 80px;
-    /* width = ancho*/
-    width: 200px;
-    height: 100px;
-    border: solid 1px black;
-    position: relative;
-} 
 
-.card-img{
-    width: 100px;
-    display: block;
-    margin: o auto;
-    border: solid 1px black;
-    max-width: none;
-}
+.card {
+    max-width: 18rem; /* ancho máximo de la tarjeta */
+    margin: auto; /* centra horizontalmente la tarjeta */
+    border: 1px solid #ccc; /* borde de la tarjeta */
+  }
+  
+  .card-img {
+    display: block; /* convierte la imagen en un elemento de bloque para centrarla */
+    margin: 0 auto; /* centra horizontalmente la imagen */
+  }
+  
+  .card-body {
+    padding: 1rem; /* relleno interno de la tarjeta */
+  }
+  
 
 .descuento {
     position: absolute;
@@ -162,9 +169,6 @@ header img{
     background-color: black;
 }
 
-/*section#productos{
-    grid-area: productos;section#productos{
-        grid-area: productos;*/
 
 /* ------Termina seccion productos------*/
 .px {
@@ -230,6 +234,14 @@ nav {
 /*--------SECCION FOOTER--------*/
 
 footer{
-    background-color: black;
-    grid-area: footer;
+    margin-top: 10px;
+
+}
+
+.icono-ig{
+    width: 30px;
+    height: 30px;
+}
+.ir-arriba{
+    background-color: chocolate;
 }
